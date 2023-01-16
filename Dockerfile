@@ -65,5 +65,5 @@ COPY /resources/scripts/start.sh start.sh
 RUN chmod +x start.sh
 
 VOLUME ["/opt/log"]
-EXPOSE 7890
+EXPOSE 7881
 ENTRYPOINT ["tini", "--", "/goan/start.sh"]

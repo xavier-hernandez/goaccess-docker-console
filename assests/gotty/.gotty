@@ -2,7 +2,7 @@
 address = "0.0.0.0"
 
 // [string] Port to listen
-port = "7890"
+port = "7881"
 
 // [bool] Permit clients to write to the TTY
 permit_write = false
