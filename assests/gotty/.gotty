@@ -5,7 +5,7 @@ address = "0.0.0.0"
 port = "7881"
 
 // [bool] Permit clients to write to the TTY
-permit_write = false
+permit_write = true
 
 // [bool] Enable basic authentication
 // enable_basic_auth = false
