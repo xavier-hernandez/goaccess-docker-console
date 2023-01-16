@@ -1,11 +1,11 @@
 // [string] Address to listen, all addresses will be used when empty
-// address = ""
+address = "0.0.0.0"
 
 // [string] Port to listen
-// port = "8080"
+port = "7080"
 
 // [bool] Permit clients to write to the TTY
-// permit_write = false
+permit_write = false
 
 // [bool] Enable basic authentication
 // enable_basic_auth = false
