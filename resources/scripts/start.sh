@@ -2,7 +2,7 @@
 source $(dirname "$0")/funcs/environment.sh
 source $(dirname "$0")/logs/npm.sh
 
-goan_version="GOAC v0.0.1"
+goan_version="GDC v0.0.1"
 goan_log_path="/opt/log"
 
 goaccess_ping_interval=15
