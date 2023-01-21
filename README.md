@@ -20,14 +20,14 @@ There is flag to set the web terminal to be read only but you really lose all of
 ---
 
 ## **Docker**
-- Image: https://hub.docker.com/r/xavierh/goan-console
+- Image: https://hub.docker.com/r/xavierh/goaccess-docker-console
 - OS/ARCH
   - linux/amd64
   - linux/arm/v7
   - linux/arm64/v8
-- Tags: https://hub.docker.com/r/xavierh/goan-console/tags
-  - stable version: xavierh/goan-console:latest
-  - latest stable development version: xavierh/goan-console:develop
+- Tags: https://hub.docker.com/r/xavierh/goaccess-docker-console/tags
+  - stable version: xavierh/goaccess-docker-console:latest
+  - latest stable development version: xavierh/goaccess-docker-console:develop
 
 
 ## **Github Repo**   
@@ -40,8 +40,8 @@ There is flag to set the web terminal to be read only but you really lose all of
 version: '3.3'
 services:
     goaccess_console:
-        image: 'xavierh/goan-console:latest'
-        container_name: goaccess_console
+        image: 'xavierh/goaccess-docker-console:latest'
+        container_name: goaccess_docker_console
         restart: always
         ports:
             - '7881:7881'
@@ -58,8 +58,8 @@ If you have permission issues, you can add PUID and PGID with the correct user i
 version: '3.3'
 services:
     goaccess_console:
-        image: 'xavierh/goan-console:latest'
-        container_name: goaccess_console
+        image: 'xavierh/goaccess-docker-console:latest'
+        container_name: goaccess_docker_console
         restart: always
         ports:
             - '7881:7881'
