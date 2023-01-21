@@ -44,7 +44,7 @@ RUN apk add --no-cache \
 
 # begin - gotty
 COPY --from=go-build /gotty/gotty /usr/bin/
-ADD /assests/gotty/.gotty /root/.gotty
+COPY /assests/gotty/.gotty /root/.gotty
 # end - gotty
 
 COPY --from=builder /goaccess /goaccess
