@@ -39,7 +39,7 @@ There is flag to set the web terminal to be read only but you really lose all of
 ```yml
 version: '3.3'
 services:
-    goaccess_console:
+    goaccess_dc:
         image: 'xavierh/goaccess-docker-console:latest'
         container_name: goaccess_docker_console
         restart: always
@@ -57,7 +57,7 @@ If you have permission issues, you can add PUID and PGID with the correct user i
 ```yml
 version: '3.3'
 services:
-    goaccess_console:
+    goaccess_dc:
         image: 'xavierh/goaccess-docker-console:latest'
         container_name: goaccess_docker_console
         restart: always
