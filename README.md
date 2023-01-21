@@ -51,7 +51,7 @@ services:
             #optional   
             - EXCLUDE_IPS=127.0.0.1 #optional - comma delimited 
         volumes:
-        - /path/to/host/nginx/logs:/opt/log
+            - /path/to/host/nginx/logs:/opt/log
 ```
 If you have permission issues, you can add PUID and PGID with the correct user id that has read access to the log files.
 ```yml
@@ -71,7 +71,7 @@ services:
             #optional   
             - EXCLUDE_IPS=127.0.0.1 #optional - comma delimited 
         volumes:
-        - /path/to/host/nginx/logs:/opt/log
+            - /path/to/host/nginx/logs:/opt/log
 ```
 
 | Parameter | Function |
