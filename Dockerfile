@@ -1,12 +1,12 @@
 FROM node:16 as js-build
 WORKDIR /gotty
-COPY /assests/gotty-1.5.0/js /gotty/js
-COPY /assests/gotty-1.5.0/Makefile /gotty/
+COPY /assests/gotty/1.5.0/js /gotty/js
+COPY /assests/gotty/1.5.0/Makefile /gotty/
 RUN make bindata/static/js/gotty.js.map
 
 FROM golang:1.16 as go-build
 WORKDIR /gotty
-ADD /assests/gotty-1.5.0 /gotty
+ADD /assests/gotty/1.5.0 /gotty
 COPY --from=js-build /gotty/js/node_modules /gotty/js/node_modules
 COPY --from=js-build /gotty/bindata/static/js /gotty/bindata/static/js
 RUN CGO_ENABLED=0 make
@@ -65,5 +65,5 @@ COPY /resources/scripts/start.sh start.sh
 RUN chmod +x start.sh
 
 VOLUME ["/opt/log"]
-EXPOSE 7880
+EXPOSE 7881
 ENTRYPOINT ["tini", "--", "/goan/start.sh"]
