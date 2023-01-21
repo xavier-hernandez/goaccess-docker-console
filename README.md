@@ -1,6 +1,6 @@
 # GoAccess for Nginx Proxy Manager Logs - Console Version
 
-## PLEASE NOTE! - This code will open a terminal via the web with the ability to interact with it with no security and root access to the docker container. Enough said.
+## PLEASE NOTE! - This code will open a terminal via a browser with the ability to interact with it; no security and root access to the docker container. Enough said.
 
 <br/>
 I created this to see if it was possible so expect bugs/problems.
